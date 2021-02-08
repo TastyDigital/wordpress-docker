@@ -17,6 +17,8 @@ It can take a minute for the containers to start the first time. When they have 
  
 ## Login to Wordpress
 
-Install new Wordpress, creating account and [login](http://localhost/wp-login.php). Activate development plugins, including JWT Auth Web tokens.
+Install new Wordpress instance at localhost, creating new account and [login](http://localhost/wp-login.php). 
 
-For Javascript Web Tokens, get your bearer token by posting valid username and password login credentials as form data to http://localhost/wp-json/jwt-auth/v1/token.
+Activate development plugins installed by the composer command above, specifically [Tasty Video Bank](https://bitbucket.org/tastydigital/tasty-video-bank/) and [JWT Auth](https://wordpress.org/plugins/jwt-auth/) Web tokens. 
+
+For JWT app authentication, get your bearer token by posting valid username and password login credentials as form data to http://localhost/wp-json/jwt-auth/v1/token.
