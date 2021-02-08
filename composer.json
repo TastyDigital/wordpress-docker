@@ -1,0 +1,38 @@
+{
+    "name": "tastydigital/wordpress-docker",
+    "description": "Worpress development container",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Toby Trembath",
+            "email": "toby@tastydigital.com"
+        }
+    ],
+    "repositories": [
+      {
+        "type": "composer",
+        "url": "https://wpackagist.org"
+      },
+      {
+        "type": "vcs",
+        "url": "git@bitbucket.org:tastydigital/tasty-video-bank.git"
+      }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "wpackagist-plugin/jwt-auth": "^1.4.2",
+        "tastydigital/tasty-video-bank": "dev-master"
+    },
+    "config": {
+      "optimize-autoloader": true,
+      "preferred-install": "dist"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+      "installer-paths": {
+        "plugins/{$name}/": ["type:wordpress-plugin"]
+      }
+    }
+}
