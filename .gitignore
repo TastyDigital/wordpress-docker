@@ -13,6 +13,7 @@ dist/
 # Composer
 vendor/
 plugins/
+data/
 wordpress/*
 !wordpress/wp-config.php
 

@@ -17,10 +17,6 @@ It can take a minute for the containers to start the first time. When they have 
  
 ## Login to Wordpress
 
-http://localhost/wp-login.php  
-username: admin  
-password: admin  
+Install new Wordpress, creating account and [login](http://localhost/wp-login.php). Activate development plugins, including JWT Auth Web tokens.
 
-Make sure not to use these credentials on a public facing website!
-
-For Javascript Web Tokens, get your bearer token by posting valid user login credentials as form data to http://localhost/wp-json/jwt-auth/v1/token.
+For Javascript Web Tokens, get your bearer token by posting valid username and password login credentials as form data to http://localhost/wp-json/jwt-auth/v1/token.
