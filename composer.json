@@ -16,7 +16,7 @@
       },
       {
         "type": "vcs",
-        "url": "git@bitbucket.org:tastydigital/tasty-video-bank.git"
+        "url": "git@bitbucket.org:tastydigital/lw-little-black-book.git"
       }
     ],
     "require": {
