@@ -3,9 +3,8 @@
 version: '3.3'
 services:
   db:
-    platform: linux/x86_64
     container_name: 'local-wordpress-db'
-    image: 'mysql:5.7'
+    image: mariadb
     volumes:
       - './data/mysql:/var/lib/mysql'
     ports:
@@ -21,7 +20,7 @@ services:
       - db
     image: 'wordpress:latest'
     ports:
-      - '5000:80'
+      - '80:80'
     environment:
       WORDPRESS_DB_HOST: 'db:3306'
       WORDPRESS_DB_USER: wordpress_user

@@ -16,12 +16,12 @@
       },
       {
         "type": "vcs",
-        "url": "git@bitbucket.org:tastydigital/lw-little-black-book.git"
+        "url": "git@bitbucket.org:tastydigital/tasty-video-bank.git"
       }
     ],
     "require": {
         "php": ">=7.1",
-        "wpackagist-plugin/jwt-auth": "^1.4.2",
+        "wpackagist-plugin/jwt-auth": "^2",
         "tastydigital/tasty-video-bank": "dev-master"
     },
     "config": {
